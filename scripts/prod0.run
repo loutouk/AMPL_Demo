@@ -1,0 +1,8 @@
+# runs the model prod0/mod in the models directory
+# use the include command in the ampl prompt to run this script
+# include fileName;
+
+option ampl_include models; # allows access to the model directory
+model prod0.mod; # loads the model
+solve;
+display XB, XC;

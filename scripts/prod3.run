@@ -1,0 +1,10 @@
+# runs the model prod2.mod in the models directory
+# use the include command in the ampl prompt to run this script
+# include fileName;
+
+option ampl_include models; # allows access to the model directory
+model prod3.mod;
+data prod3.dat;
+solve;
+display Make.lb, Make, Make.ub, Make.rc;
+display Time;
